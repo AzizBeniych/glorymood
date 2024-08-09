@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glory Mood Beauty & Self Care</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+    <section id="products">
+        <h2>Glory Mood</h2>
+        <p>glorymood.com</p>
+        <a href="tel:602067086"><button onclick="showDetails()">Contact us</button></a>
+        <div id="details" style="display:none;">
+            
+        </div>
+    </section>
+    <footer>
+        <p>Whatsapp: +212 689796584</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+<style>
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background: #ffc0cb;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #6001d2;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+button {
+    background: linear-gradient(45deg, #6b7efe 30%, #53a2ff 90%);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 25px;
+    box-shadow: 0 9px #999;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+button:hover {
+    box-shadow: 0 12px #666;
+    transform: translateY(-4px);
+}
+
+footer {
+    background: #ddd;
+    padding: 10px 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+section {
+    padding: 15%;
+    text-align: center;
+}
+</style>
+
+
+
+<script>
+    function showDetails() {
+    var details = document.getElementById('details');
+    if (details.style.display === 'none') {
+        details.style.display = 'block';
+    } else {
+        details.style.display = 'none';
+    }
+}
+</script>
